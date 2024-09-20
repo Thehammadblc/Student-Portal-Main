@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <!-- <div class="text-2xl tracking-wide font-semibold">
+                <a href="#" class="text-gray-800 font-serif">SM Portal</a>
+            </div> -->
+
+            <!-- Hamburger Icon -->
+            <div class="lg:hidden flex items-center">
+                <button id="menu-button" class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navbar Links -->
+            <div id="menu" class="hidden lg:flex lg:items-center lg:space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a id="studentPortalLink" href="/pages/student-pannel/student.html"
+                    class="text-gray-600 hover:text-gray-800">Student Portal</a>
+                <a id="loginLink" href="./pages/auth/login/login.html"
+                    class="text-gray-600 hover:text-gray-800">Login</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden bg-white shadow-md mt-2 grid justify-items-center">
+            <a href="#" class="block text-gray-600 hover:text-gray-800 px-4 py-2">Home</a>
+            <a id="studentPortalLinkMobile" href="/pages/student-pannel/student.html"
+                class="block text-gray-600 hover:text-gray-800 px-4 py-2">Student Portal</a>
+            <a id="loginLinkMobile" href="./pages/auth/login/login.html"
+                class="block text-gray-600 hover:text-gray-800 px-4 py-2">Login</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-cover bg-center h-screen"
+        style="background-image: url('https://cdn.prod.website-files.com/6509fe179d7033a278a05268/652771a2ad43d990a8837c07_Blog-feature-HR-Pillar.png');">
+        <div class="flex items-center justify-center h-full bg-gray-800 bg-opacity-50">
+            <div class="text-center text-white">
+                <h1 class="text-5xl font-bold mb-4 text-white">Saylani Student Portal </h1>
+                
+        <a href="./pages/auth/login/login.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
